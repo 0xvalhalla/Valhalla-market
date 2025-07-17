@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Valhalla Market</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="script.js"></script>
+  <div class="container">
+    <h1>🛡️ Market Telegram</h1>
+    <p>Welcome To Market Telegram!</p>
+
+    <h2>🍽 Food </h2>
+    <table class="product-table">
+      <tr>
+        <th>Food Category</th>
+        <th>Category</th>
+        <th>Price TON</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>Burger</td>
+        <td>
+            <select id="varian-burger">
+              <option value="">Please Choise</option>
+            <option value="Classic Chesee Burger">Classic Chesee burger</option>
+            <option value="Bacon BBQ Burger">Bacon BBQ Burger</option>
+            <option value="Mushroom Swiss Burger">Mushroom Swiss Burger</option>
+         </select>
+        </td>
+        <td>4</td>
+        <td><button onclick="buy('Burger', 4, 'varian-burger')">Buy</button></td>
+      </tr>
+      <tr>
+        <td>Potato</td>
+        <td>
+          <select id="varian-potato">
+            <option value="">Please Choise</option>
+            <option value="Loaded Potato Skins">Loaded Potato Skins</option>
+            <option value="Garlic Parmesan Fries">Garlic Parmesan Fries</option>
+            <option Value="Chili Chesee Tots">Chili Chesee Tots</option>
+          </select>
+        </td>
+        <td>5</td>
+        <td><button onclick="buy('potato', 5, 'varian-potato')">Buy</button></td>
+      </tr>
+      <tr>
+        <td>Pizza</td>
+        <td>
+          <select id="varian-pizza">
+            <option value="">Please Choise</option>
+            <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+            <option value="Hawaiian Pizza">Hawaiian Pizza</option>
+            <option value="Chili Chesee Tots">Chili Chesee Tots</option>
+          </select>
+        </td>
+        <td>6</td>
+        <td><button onclick="buy('Pizza', 6, 'varian-pizza')">Buy</button></td>
+    </tr>
+    <tr> 
+        <td>Drink</td>
+        <td>  
+        <select id="varian-drink">
+          <option value="">Please Choise</option>
+        <option value="Root beer Float">Root Beer Float</option>
+        <option value="Iced Lemonade">Iced Lemonade</option>
+        <option value="Iced Tea">Iced Tea</option>
+        </select>
+      </td>
+        <td>7<a/td>
+        <td><button onclick="buy('drink',7, 'varian-potato')">Buy</button></td>
+    </tr> 
+    </table>
+
+    <div class="nav-buttons">
+  <a href="index.html" class="nav-btn">⬅ Logout</a>
+  <a href="shirt.html" class="nav-btn">➡ Next</a>
+</div>
+  </div>
+
+  <script>
+    function buy(nama, harga, varianSelectId) {
+      const select = document.getElementById(varianSelectId);
+      const selectedVarian = select.value;
+      
+      alert(`Buy: ${nama} - Varian: ${selectedVarian} - Price: ${harga} TON ✅`);
+    }
+  </script>
+</body>
+</html>

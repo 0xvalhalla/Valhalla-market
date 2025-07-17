@@ -1,0 +1,84 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: auto;
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,255,200,0.1);
+  }
+  
+  h1 {
+    color: #00bfa5;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+   select {
+      padding: 6px 10px;
+      font-size: 14px;
+   }
+
+  button:hover {
+    background-color: #00a891;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #walletStatus {
+    margin-top: 20px;
+    color: #00ffcc;
+  }
+  .product-table {
+    margin: auto;
+    margin-top: 20px;
+    background-color: #222;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .product-table th,
+  .product-table td {
+    border: 1px solid #444;
+    padding: 12px;
+  }
+  .nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 80px; /* bisa diatur sesuai lebar konten lu */
+}
+
+.nav-btn {
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #555;
+}
+
+    

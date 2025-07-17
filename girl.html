@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Valhalla Market</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="script.js"></script>
+  <div class="container">
+    <h1>🛡️ Market Telegram</h1>
+    <p>Welcome To Market Telegram!</p>
+
+    <h2>👗 Ladies T-Shirt Store </h2>
+    <table class="product-table">
+      <tr>
+        <th>Shirt</th>
+        <th>Category</th>
+        <th>Price TON</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>Blouse</td>
+        <td>
+            <select id="varian-blouse">
+              <option value="">Please Choise</option>
+            <option value="Slik Blouse">Slik Blouse</option>
+            <option value="Floral Chiffon Top">Floral Chiffon Top</option>
+            <option value="Ruffle Sleeve Blouse">Ruffle Sleeve Blouse</option>
+            <option valau="Tie-Front Blouse">Tie-Front Blouse</option>
+         </select>
+        </td>
+        <td>4</td>
+        <td><button onclick="buy('Blouse', 4, 'varian-blouse')">Buy</button></td>
+      </tr>
+      <tr>
+        <td>Hoodie</td>
+        <td>
+          <select id="varian-hoodie">
+            <option value="">Please Choise</option>
+            <option value="Cropped Hoodie">Cropped Hoodie</option>
+            <option value="Floral Print Hoodie">Float Print Hoodie</option>
+            <option Value="Zip-Up Hoodie">Zip-Up Hoodie</option>
+            <option value="Oversized Hoodie">Oversized Hoodie</option>
+          </select>
+        </td>
+        <td>5</td>
+        <td><button onclick="buy('hoodie', 5, 'varian-hoodie')">Buy</button></td>
+      </tr>
+      <tr>
+        <td>Trousers</td>
+        <td>
+          <select id="varian-celana">
+            <option value="">Please Choise</option>
+            <option value="High-Waist jeans">High-Waist Jeans</option>
+            <option value="Legging Pants">Legging Pants</option>
+            <option value="Skirt Pants">Skirt Pants</option>
+            <option value="Cargo Skirt">Cargo Skirt</option>
+          </select>
+        </td>
+        <td>6</td>
+        <td><button onclick="buy('trousers', 6, 'varian-trousers')">Buy</button></td>
+    </tr>
+    <tr> 
+        <td>Shoe</td>
+        <td>  
+        <select id="varian-sepatu">
+          <option value="">Please Choise</option>
+        <option value="Sneakers">Sneakers</option>
+        <option value="Ankie Boots">Ankie Boots</option>
+        <option value="Bellet Flats">Bellet Flats</option>
+        <option value="Athletic Shoes">Athletic Shoes</option>
+        </select>
+      </td>
+        <td>7<a/td>
+        <td><button onclick="buy('shoe',7, 'varian-shoe')">Buy</button></td>
+    </tr> 
+    </table>
+
+    <div class="nav-buttons">
+  <a href="shirt.html" class="nav-btn">⬅ Back</a>
+  <a href="shirt.html" class="nav-btn">➡ Next</a>
+</div>
+  </div>
+
+  <script>
+    function buy(nama, harga, varianSelectId) {
+      const select = document.getElementById(varianSelectId);
+      const selectedVarian = select.value;
+      
+      alert(`Buy: ${nama} - Varian: ${selectedVarian} - Price: ${harga} TON ✅`);
+    }
+  </script>
+</body>
+</html>
